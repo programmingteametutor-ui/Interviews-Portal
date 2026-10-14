@@ -1,4 +1,4 @@
-const API='PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+const API='https://script.google.com/macros/s/AKfycbzckT6mRjJgCUhKfIeuHsaPU3uzVMMC5c9RamVojGrQ6m1VgKGUvuN0CoDfcD6-sMY7BQ/exec';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
 const N='Candidate name',E='Email ID',P='Phone number',IDK={Candidates:'ID',Interviews:'Record ID'};
 const CF=[[N],[E],[P],['Location'],['Experience'],['Assigned domains'],['Technical POC','sel'],['Assigned To'],['Date of joining','date'],['First client name'],['First client sector'],['Second client name'],['Second client sector'],['Visa type'],['Visa start date','date'],['Visa end date','date'],['Status','sel']];
