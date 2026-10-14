@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recruit Portal</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script></head><body>
+<header><b class="brand">Recruit Portal</b><nav><a href="#candidates">Candidates</a><a href="#interviews">Interviews</a><a href="#datafix">DataFix</a></nav><span id="st"></span></header>
+<main>
+<section id="candidates"><div class="bar"><h1>Candidates</h1><span class="sp"></span><button onclick="dupes()">Find duplicates</button><button onclick="$('#xl').click()">Import from Excel</button><input id="xl" type="file" accept=".xlsx,.xls,.csv" hidden><button class="pri" onclick="form('Candidates')">+ Add Candidate</button></div>
+<div class="bar"><input id="cq" placeholder="Search candidates"><select id="cp"></select><select id="cs"><option value="">All statuses<option>Active<option>Inactive<option>Placed</select><button class="ghost" onclick="clr()">Clear filters</button></div>
+<div id="cl" class="cards"></div><div id="cpg" class="pg"></div></section>
+<section id="interviews"><div class="bar"><h1>Interviews</h1><span class="sp"></span><input id="iq" placeholder="Search interviews"><button class="pri" onclick="form('Interviews')">+ Add Interview</button></div>
+<div id="il"></div><div id="ipg" class="pg"></div></section>
+<section id="datafix"></section>
+</main>
+<div id="md" class="ov" hidden><div class="box"><button class="x" onclick="closeM()">✕</button><div id="mb"></div></div></div>
+<script src="app.js"></script></body></html>
